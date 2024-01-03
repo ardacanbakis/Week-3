@@ -34,12 +34,12 @@ public class Minesweeper {
         while (true) {
             printBoard();
 
-            System.out.print("Enter row and column (e.g., 0 1): ");
+            System.out.print("Satır ve sütun numarası giriniz (örn: 0 1): ");
             int row = scanner.nextInt();
             int col = scanner.nextInt();
 
             if (row < 0 || row >= rows || col < 0 || col >= columns) {
-                System.out.println("Invalid input. Please enter values between 0 and " + (rows - 1) + " for rows and 0 and " + (columns - 1) + " for columns.");
+                System.out.println("Hatalı giriş. Sütun için 0 ile " + (rows - 1) + " ve satır için 0 ile " + (columns - 1) + " arasında değer giriniz.");
                 continue;
             }
 
@@ -178,14 +178,14 @@ public class Minesweeper {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Merhaba, mayin tarlasi oyununa hoşgeldiniz. Oyun alanını oluşturmak için satır sayısını giriniz: ");
+        System.out.print("Merhaba, mayın tarlasi oyununa hoşgeldiniz. Oyun alanını oluşturmak için satır sayısını giriniz: ");
         int rows = scanner.nextInt();
 
         System.out.print("Oyun alanını oluşturmak için sütun sayısını giriniz: ");
         int columns = scanner.nextInt();
 
         if (rows < MIN_SIZE || columns < MIN_SIZE) {
-            System.out.println("Hatalı giriş, satır ve sütün sayısı en az " + MIN_SIZE + "olmalıdır. Lütfen oyunu tekrar çalıştırın.");
+            System.out.println("Hatalı giriş, satır ve sütün sayısı en az " + MIN_SIZE + " olmalıdır. Lütfen oyunu tekrar çalıştırın.");
             return;
         }
 
