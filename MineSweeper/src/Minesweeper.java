@@ -39,7 +39,7 @@ public class Minesweeper {
             int col = scanner.nextInt();
 
             if (row < 0 || row >= rows || col < 0 || col >= columns) {
-                System.out.println("Hatalı giriş. Sütun için 0 ile " + (rows - 1) + " ve satır için 0 ile " + (columns - 1) + " arasında değer giriniz.");
+                System.out.println("Hatalı giriş. Satır için 0 ile " + (rows - 1) + " ve sütun için 0 ile " + (columns - 1) + " arasında değer giriniz.");
                 continue;
             }
 
